@@ -1,0 +1,14 @@
+DigiDiary - Models
+--index.js--
+      +
+1. diaryList
+2. diaryListDisplay
+3. diary
+4. diaryDisplay
+5. notifications
+6. notificationsDisplay
+7. events
+8. eventsDisplay
+9. todo
+10.todoDisplay
+11.aboutDisplay
