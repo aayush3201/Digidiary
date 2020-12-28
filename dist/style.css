@@ -1,0 +1,475 @@
+//#031163
+html,
+body,
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: linear-gradient(#0b2be2,#0b2be2,#0c2ad3bb);
+}
+*{  
+    margin:0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif; 
+    font-size: 20px;  
+}
+.container{
+    margin: 0 1%;
+}
+.clearfix{zoom:1;}
+.clearfix:after{
+    content:'.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+header{
+    background-image: linear-gradient(#031163,#0b2be2);
+    height: 15vh;
+    width: 100%;
+    color: #ffffff;
+}
+h1{
+    font-family: 'Patrick Hand',cursive;
+    font-size: 150%;
+    letter-spacing: 1px;
+    margin-top: 35px;
+}
+.heading{
+    display: inline-block;
+    color:#ffffff;
+}
+.title{
+    margin-left: 5%;
+    width: 10%;
+    float:left;
+}
+.book{
+    padding-right: 1%; 
+    font-size: 100%;
+}
+.diary-item{
+    width:100%;
+    height:80px;
+    color:black;
+    text-decoration:none;
+    background-color: #ffffff;
+    transition: background-color 0.2s;
+    margin-bottom: 7px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.diary-item:link,
+.diary-item:visited{
+    width:100%;
+    height:80px;
+    color:black;
+    text-decoration:none;
+    background-color: #ffffff;
+}
+.active{
+    background-color: #e2e2e2;
+}
+.diary-item:hover,
+.diary-item:active{
+    background-color: #e2e2e2;
+}
+.date{
+    font-family: 'Roboto',sans-serif;
+    color:#0b2be2;
+    float:left;
+    margin: 15px 0 0 10px;
+    text-align: center;
+    font-size: 120%;
+}
+.diary-list{
+    list-style: none;
+    overflow-y: auto;
+    height:70vh;
+    margin-top: -1px;
+    padding: 0 7px;
+    
+}
+.diary-title{
+    float:right;
+    margin: 29px 22% 0 0;
+}
+.btn-next{
+    float:right;
+}
+.btn-prev{
+    margin-left:5px;
+    float:left;
+}
+span{
+    font-size: 100%;
+}
+.btn{
+    font-size: 80%;
+    color:#0b2be2;
+    padding: 6px 4px;
+    border-radius: 20px;
+    transition: color 0.2s, background-color 0.2s;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: #0b2be2;
+    color:#ffffff;
+}
+.no-diaries{
+    text-align:center;
+    margin-top: 30px;
+    color:#0b2be2;
+    font-size: 120%;
+}
+.btn-jump{
+    text-align: center;
+    width:20%;
+    margin:0 42% 0 38%;
+}
+.head-date{
+    width:42%;
+    font-size: 200%;
+    font-weight: 300;
+    border-bottom: 2px solid #0b2be2;
+    margin: 7px 3%  20px 0;
+}
+textarea{
+    padding: 10px 10px;
+    margin: 20px 0 20px 0;
+    width:97%;
+    height:50vh;
+}
+.submit{
+    text-align: center;
+    margin:20px 45% 0 45%;
+    width:10%;
+    font-size: 120%;
+}
+a{
+    font-size: 90%;
+}
+
+.diary-text{
+    width:100%;
+    height: 525px;
+    font-family: 'Patrick Hand',cursive;
+    font-size: 150%;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    line-height: 40px;
+    margin-bottom: 10px;
+    overflow: auto;
+}
+.next-page{
+    display:none;
+    margin-right:35%;
+    width: 10%;
+    text-align: center;
+}
+.prev-page{
+    display:none;
+    margin-left:35%;
+    width: 10%;
+    text-align: center;
+}
+.headline{
+    position: relative;
+}
+.btn-edit{
+    position: absolute;
+    top:25%;
+    right:5%;
+    width:10%;
+    text-align: center;
+    font-size: 110%;
+}
+.noti-title{
+    width: 40%;
+    margin: 0 30% 0 30%;
+    font-size: 120%;
+    font-weight: 400;
+    border-bottom: 2px solid #0b2be2;
+}
+.notifications{
+    width:23%;
+    border-left: 3px solid #0b2be262;
+    height:81vh;
+}
+.list-of-diaries{
+    width:23%;
+    border-right: 3px solid #0b2be262;
+    height:81vh;
+}
+h4{
+    text-align: center;
+    font-size: 100%;
+}
+.noti-list{
+    width: 100%;
+    list-style: none;
+    margin-top: 25px;
+    padding:0 7px;
+    overflow-y: auto;
+    height:68vh;
+}
+.delete-btn{
+    float:right;
+    color: #57565600;
+    padding-right: 5%;
+    transition: color 0.2s;
+    font-size: 110%;
+}
+p{
+    font-size: 80%;
+}
+.noti-item{
+    margin-bottom: 5px;
+    width:100%;
+    padding:20px 3px;
+    transition: background-color 0.2s;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.message, .task{
+    float:left;
+    width:70%;
+    vertical-align: middle;
+    font-size: 88%;
+}
+.noti-item:hover{
+    background-color: #e4e4e4;
+    cursor: pointer;
+}
+.delete-btn:hover{
+    color:red;
+}
+.dashboard{
+    float:right;
+    font-size: 200%;
+    margin: 6vh 1% 0 0;
+}
+.dropdown{
+    position: relative;
+    z-index: 1;
+    display:block;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    top:60px;
+    right:30px;
+    background-color: #ffffff;
+    min-width: 70px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {background-color: #e2e2e2;}
+.dropdown:hover .dropdown-content {display: inline-block;}
+
+.modal {
+     /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    transition: display 1s;
+    
+  }
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+    height: 30vh;
+  }
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.jumptodate{
+    list-style: none;
+    margin-top: 13vh;
+    text-align: center;
+}
+.jumptodate input{
+    width:40%;
+}
+.submit-btn{
+    width: 20%;
+    margin: 40px 40% 0 40%;
+    text-align: center;
+}
+textarea:focus, input:focus,{
+    outline-color:#0b2be2;
+}
+.hide{
+    display:none;
+}
+.todotitle{
+    text-align: center;
+    width: 20%;
+    margin: 20px 40% 0 40%;
+    font-size: 105%;
+    font-weight: 400;
+    border-bottom: 2px solid #0b2be2;
+}
+.todo-list{
+    margin-top: 15px;
+    list-style: none;
+    height: 390px;
+    overflow-y: auto;
+    
+}
+.todo-item:hover{
+    cursor: pointer;
+}
+.check-box{
+    float:right;
+    margin-right: 5%;
+    transition: color 0.2s;
+}
+.todo-item{
+    margin-bottom: 5px;
+    width:97%;
+    padding:13px 3px;
+    transition: background-color 0.2s;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.task{
+    padding-left:3%;
+}
+.add-new{
+    float: left;
+}
+.event-content, .todo-content{
+    height: 60vh !important;
+    margin: 7% auto !important;
+}
+.eventtitle{
+    text-align: center;
+    width: 10%;
+    margin: 20px 45% 0 45%;
+    font-size: 140%;
+    font-weight: 400;
+    border-bottom: 2px solid #0b2be2;
+}
+.event-btn{
+    display: inline-block;
+    margin-right: 5%;
+    width: 25%;
+    text-align: center;
+}
+.event-btns{
+    padding-top: 20px;
+    padding-left: 3%;
+}
+.upcoming{
+    padding-left: 3%;
+    padding-top: 10px;
+}
+.event-item{
+    margin-bottom: 5px;
+    width:97%;
+    padding:13px 3px;
+    transition: background-color 0.2s;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.event-list{
+    list-style: none;
+    margin-top: 10px;
+    height: 300px;
+    overflow-y: auto;
+}
+.event-description{
+    padding-left:3%;
+}
+.popup{
+     /* Hidden by default */
+     position: fixed; /* Stay in place */
+     z-index: 3; /* Sit on top */
+     left: 0;
+     top: 0;
+     width: 100%; /* Full width */
+     height: 100%; /* Full height */
+     overflow: auto; /* Enable scroll if needed */
+     background-color: rgb(0,0,0); /* Fallback color */
+     background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+     transition: display 1s; 
+}
+.popup-content{
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+    height: 30vh;
+}
+.new-todo-info{
+    list-style: none;
+    margin: 20px 0 0 5%;
+}
+.new-todo-info li input{
+    width: 40%;
+    padding: 2px 7px; 
+}
+.new-todo-info li{
+    margin-bottom: 17px;
+}
+.submit-btn-newtodo{
+    margin-left: 47% !important;
+}
+.new-annual-info, .new-monthly-info, .new-onetime-info{
+    list-style: none;
+    margin: 20px 0 0 5%;
+}
+.new-annual-info li input,.new-annual-info li select{
+    width: 40%;
+    padding: 2px 7px; 
+}
+.new-annual-info li{
+    margin-bottom: 17px;
+}
+.submit-btn-newannual,.submit-btn-newmonthly, .submit-btn-newonetime{
+    margin-left: 47% !important;
+}
+.new-monthly-info li input, .new-onetime-info li input{
+    width:40%;
+    padding: 2px 7px; 
+}
+.new-monthly-info li, .new-onetime-info li{
+    margin-top: 25px;
+    margin-bottom: 35px;
+}
+.about-text{
+    margin-top: 40px;
+    line-height: 30px;
+}
+.view-noti:hover{
+    cursor: pointer;
+}
+.view-noti{
+    display:none;
+}
+.notifications{
+    display:block;
+}

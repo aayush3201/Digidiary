@@ -1,0 +1,117 @@
+  @media only screen and (max-width:510px){
+    *{
+        font-size:10px;
+    }
+    .diary-title{
+        display:none;
+    }
+    .diary-item{
+        text-align: center;
+    }
+    .view-noti{
+        display: block;
+    }
+    .notifications{
+        z-index: 10;
+        display:none;
+        width:73%;
+    }
+    .diary-area{
+        width:73%;
+    }
+  }
+
+  @media only screen and (max-width:767px){
+    .diary-title{
+        display:none;
+    }
+    .diary-item{
+        text-align: center;
+    }
+    .view-noti{
+        display: block;
+    }
+    .notifications{
+        z-index: 10;
+        display:none;
+        width:73%;
+    }
+    .diary-area{
+        width:73%;
+    }
+    .diary-list{
+        height: 60vh;
+    }
+    .btn-jump,.btn-next,.btn-prev{
+        width:90%;
+        margin:5px 5% 5px 5%;
+        text-align: center;
+    }
+    .btn-next{
+        float: none;
+    }
+    .btn-prev{
+        float: none;
+    }
+    .event-list{
+        height:250px;
+    }
+    .todo-list{
+        height:380px;
+    }
+    .head-date{
+        font-size: 170%;
+        width:65%;
+    }
+    input{
+        width:90% !important;
+    }
+    .popup-content{
+        height:35vh;
+        width:55%;
+    }
+    .eventtitle{
+        width:40%;
+        margin: 0 30%;
+    }
+    .about-text{
+        height:23vh;
+        overflow-y: auto;
+    }
+}
+
+@media only screen and (max-width:1140px){
+    .title{
+        width:40%;
+    }
+    *{
+        font-size:12px;
+    }
+    .diary-title{
+        display:none;
+    }
+    .diary-item{
+        text-align: center;
+    }
+}
+@media only screen and (max-width:1450px){
+    *{
+        font-size:17px;
+    }
+}
+@media only screen and (min-width:1140px){
+    .notifications{
+        display:block !important;
+        width:23%;
+    }
+
+}
+@media only screen and (min-width:767px){
+    .diary-area{
+        display: block !important;
+    }
+    .notifications{
+        display:block !important;
+        width:23%;
+    }
+}
