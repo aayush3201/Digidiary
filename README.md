@@ -12,7 +12,10 @@ Navigate to this folder using the command-line.
 
 Type in "npm install" to install all dependencies.
 
-Then, type in "npm run start".
+Then, type in "npm run start" to run it with the devServer.
 
+Alternatively (recommended for regular use) go to dist -> index.html (note: Do not use the one in the src folder).
+
+Recommended browser: Google Chrome
 
 Personal Note: This application's code does to meet professional standards because I wasn't aware about these standards and didn't understand their importance when I worked on this project. 
