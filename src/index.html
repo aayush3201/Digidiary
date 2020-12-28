@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+    <link rel="manifest" href="/img/site.webmanifest">
+    <link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#1906fa">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="theme-color" content="#ffffff">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="normalize.css">
+        <link rel="stylesheet" type="text/css" href="grid.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="queries.css">
+        <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300;1,400&display=swap" rel="stylesheet">
+        <title>DigiDiary</title>
+    </head>
+    <body>
+        <header>
+            <ul class="title clearfix">
+                <li class = "heading"></li><i><ion-icon name="book" class="book"></ion-icon></i></li>
+                <li class = "heading"><h1>DigiDiary</h1></li>
+            </ul>
+            <div class="dropdown ">
+                <ion-icon name="menu" class="dashboard clearfix"></ion-icon>
+                <div class="dropdown-content">
+                    <a href="#" class="todo-list-button">TO-DO LIST</a>
+                    <a href="#" class="events-button">EVENTS</a>
+                    <a href="#" class="about-button">ABOUT</a>
+                </div>
+            </div>
+            <ion-icon name="notifications" class="view-noti dashboard clearfix"></ion-icon>
+         </header>
+        
+            <div class="row container"> 
+            <div class="col span-1-of-4 list-of-diaries">
+                <ul class="diary-list clearfix">
+<!--                    <li>
+                        <a href="#">
+                            <div class="row diary-item">
+                                <h2 class="date">Feb<br>25</h2>
+                                <h3 class="diary-title">No title</h3>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="row diary-item">
+                                <h2 class="date">Feb<br>25</h2>
+                                <h3 class="diary-title">No title</h3>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="row diary-item">
+                                <h2 class="date">Feb<br>25</h2>
+                                <h3 class="diary-title">No title</h3>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="row diary-item">
+                                <h2 class="date">Feb<br>25</h2>
+                                <h3 class="diary-title">No title</h3>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="row diary-item">
+                                <h2 class="date">Feb<br>25</h2>
+                                <h3 class="diary-title">No title</h3>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="row diary-item">
+                                <h2 class="date">Feb<br>25</h2>
+                                <h3 class="diary-title">No title</h3>
+                            </div>
+                        </a>
+                    </li>
+-->
+                    </ul>
+                    <div class="row">
+                        <h4 class="year">Year 2020</h4>
+                        <div class="btn btn-next clearfix">
+                            <span>Next Month</span>
+                            <ion-icon name="arrow-forward"></ion-icon>
+                        </div>
+                        <div class="btn btn-prev clearfix">
+                            <ion-icon name="arrow-back"></ion-icon>
+                            <span>Prev Month</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="btn btn-jump">
+                            <span>Jump To</span>
+                        </div>
+                    </div>
+            </div>
+            <div class="col span-2-of-4 diary-area">
+
+ <!--                      <div class="row headline">
+                            <h2 class="head-date">25 February, 2020</h2>
+                            <div class="btn btn-edit">
+                                <ion-icon name="hammer"></ion-icon>
+                                <span>Edit</span>
+                            </div>
+                        </div>
+                   <div class="edit-view">
+                        <textarea name="diary-entry" placeholder="What's up! You can tell me about all that happened today :)"></textarea>
+                        <div class="btn submit">
+                            <span>Save</span>
+                        </div>
+                    </div>
+                   <div class="readview">
+                        <p class="diary-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        <div class="row">
+                            <div class="next-page btn-next btn">
+                                <span>Next</span>
+                                <ion-icon name="arrow-forward"></ion-icon>
+                            </div>
+                            <div class="prev-page btn-prev btn">
+                                <ion-icon name="arrow-back"></ion-icon>
+                                <span>Back</span>
+                            </div>
+                        </div>
+                     </div>
+-->              
+                    </div>
+        
+                    <div class="col span-1-of-4 notifications">
+                        <h3 class="noti-title">Notifications</h3>
+                        <ul class="noti-list clearfix">
+<!--                        <li>
+                                <div class="row noti-item">
+                                    <p class="message clearfix">It's Aayush's birthday in 2 days</p>
+                                    <ion-icon class="delete-btn clearfix" name="close-circle"></ion-icon>
+                                </div>
+                            </li>
+-->
+                        </ul>
+                    </div>
+        </div>
+        <div class="extras">
+            <div class="modal hide jumptomodal"> 
+                <div class="modal-content">
+                  <span class="close clearfix">&times;</span>
+                  <div class="jumptodate">
+                        <input name="day" type="date" placeholder="Day" class="jump-date">
+                </div>
+                  <p class="btn submit-btn submit-btn-jump">Submit</p>
+                </div>
+            </div>
+    
+    
+            <div class="modal hide todomodal">
+                <div class="modal-content todo-content">
+                    <span class="close close-todo clearfix">&times;</span>
+                    <div class="Todo">
+                        <span class="btn add-new clearfix">New item</span>
+                        <h3 class="todotitle">To-Do List</h3>
+                        <ul class="todo-list">
+<!--                       <li>
+                                <div class="row todo-item">
+                                    <p class="task clearfix">"Mow the lawn" due on <strong>26 February, 2020</strong> at <strong>5:30pm</strong></p>
+                                    <input class="check-box clearfix" type="checkbox">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row todo-item">
+                                    <p class="task clearfix">"Mow the lawn" due on <strong>26 February, 2020</strong> at <strong>5:30pm</strong></p>
+                                    <input class="check-box clearfix" type="checkbox">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row todo-item">
+                                    <p class="task clearfix">"Mow the lawn" due on <strong>26 February, 2020</strong> at <strong>5:30pm</strong></p>
+                                    <input class="check-box clearfix" type="checkbox">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row todo-item">
+                                    <p class="task clearfix">"Mow the lawn" due on <strong>26 February, 2020</strong> at <strong>5:30pm</strong></p>
+                                    <input class="check-box clearfix" type="checkbox">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row todo-item">
+                                    <p class="task clearfix">"Mow the lawn" due on <strong>26 February, 2020</strong> at <strong>5:30pm</strong></p>
+                                    <input class="check-box clearfix" type="checkbox">
+                                </div>
+                            </li>
+    -->                   </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="modal eventmodal hide">
+                <div class="modal-content event-content">
+                    <span class="close clearfix">&times;</span>
+                    <div class="events">
+                        <h3 class="eventtitle">Events</h3>
+                        <ul class="event-btns">
+                            <li class="event-btn">
+                                <div class="btn new-annual-btn">                            
+                                    <ion-icon name="add"></ion-icon>
+                                    <span>New annual event</span>
+                                </div>
+                            </li>
+                            <li class="event-btn">
+                                <div class="btn new-monthly-btn">                            
+                                    <ion-icon name="add"></ion-icon>
+                                    <span>New monthly event</span>
+                                </div>
+                            </li>
+                            <li class="event-btn">
+                                <div class="btn new-one-btn">                            
+                                    <ion-icon name="add"></ion-icon>
+                                    <span>New one-time event</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <h2 class="upcoming">Upcoming</h2>
+                        <ul class="event-list">
+<!--                        <li class="row event-item">
+                                <p class="event-description">Aayush's birthday on <strong>3 February</strong>.</p>
+                            </li>
+                            <li class="row event-item">
+                                <p class="event-description">Rent on <strong>10 February</strong>.</p>
+                            </li>
+                            <li class="row event-item">
+                                <p class="event-description">Exhibition on <strong>12 February</strong>.</p>
+                            </li>
+-->                       </ul>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="popup hide todopopup">
+                <div class="popup-content">
+                    <span class="close clearfix">&times;</span>
+                    <h3 class="todotitle">New Item</h3>
+                    <div class="new-todo">
+                        <ul class="new-todo-info">
+                            <li>
+                                <input class="todo-description" type="text" maxlength="100" placeholder="Description (max. 100 characters)">
+                            </li>
+                            <li>
+                                <input class="todo-date" type="date">
+                            </li>
+                            <li>
+                                <input class="todo-time" type="time">
+                            </li>
+                        </ul>
+                        <span class="btn submit-btn submit-btn-newtodo">Submit</span>
+                    </div>
+                </div>
+            </div>
+            <div class="popup annualpopup hide">
+                <div class="popup-content">
+                    <span class="close clearfix">&times;</span>
+                    <h3 class="todotitle">Annual Event</h3>
+                    <div class="new-annual">
+                        <ul class="new-annual-info">
+                            <li>
+                                <input class="description-annual" type="text" maxlength="100" placeholder="Description (max. 100 characters)">
+                            </li>
+                            <li>
+                                <select class="month-annual">
+                                    <option value="Choose">Select Month</option>
+                                    <option value="January">January</option>
+                                    <option value="February">February</option>
+                                    <option value="March">March</option>
+                                    <option value="April">April</option>
+                                    <option value="May">May</option>
+                                    <option value="June">June</option>
+                                    <option value="July">July</option>
+                                    <option value="August">August</option>
+                                    <option value="September">September</option>
+                                    <option value="October">October</option>
+                                    <option value="November">November</option>
+                                    <option value="December">December</option>
+                                  </select>
+                            </li>
+                            <li>
+                                <input class="date-annual" type="number" min="1" max="31" placeholder="Enter Date">
+                            </li>
+                        </ul>
+                        <span class="btn submit-btn submit-btn-newannual">Submit</span>
+                    </div>
+                </div>
+            </div>
+            <div class="popup monthlypopup hide">
+                <div class="popup-content">
+                    <span class="close clearfix">&times;</span>
+                    <h3 class="todotitle">Monthly Event</h3>
+                    <div class="new-monthly">
+                        <ul class="new-monthly-info">
+                            <li>
+                                <input class="description-monthly" type="text" maxlength="100" placeholder="Description (max. 100 characters)">
+                            </li>
+                            <li>
+                                <input class="date-monthly" type="number" min="1" max="31" placeholder="Enter Date">
+                            </li>
+                        </ul>
+                        <span class="btn submit-btn submit-btn-newmonthly">Submit</span>
+                    </div>
+                </div>
+            </div>
+            <div class="popup onetimepopup hide">
+                <div class="popup-content">
+                    <span class="close clearfix">&times;</span>
+                    <h3 class="todotitle">One-time Event</h3>
+                    <div class="new-onetime">
+                        <ul class="new-onetime-info">
+                            <li>
+                                <input class="description-onetime" type="text" maxlength="100" placeholder="Description (max. 100 characters)">
+                            </li>
+                            <li>
+                                <input class="date-onetime" type="date">
+                            </li>
+                        </ul>
+                        <span class="btn submit-btn submit-btn-newonetime">Submit</span>
+                    </div>
+                </div>
+            </div>
+            <div class="modal aboutmodal hide">
+                <div class="modal-content">
+                    <span class="close clearfix">&times;</span>
+                    <p class="about-text">Hello! This is DigiDiary - your very own virtual diary. You can now organize your routines, thoughts, actions, etc. all in one place, without having to flip through seemingly countless pages.<br><br><strong>Note:</strong> This application stores your data on <strong>your browser</strong>. Which means that you cannot access your diary from another device or even another browser. However, this also ensures that no one except those who have access to your device have access to your diary!</p>
+                </div>
+            </div>
+        </div>
+        <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    </body>
+</html>
