@@ -6,15 +6,7 @@ DigiDiary is a web-appliction written in JavaScript, HTML and CSS. It is a digit
 
 Download the files to an empty folder.
 
-Install Node.js.
-
-Navigate to this folder using the command-line.
-
-Type in "npm install" to install all dependencies.
-
-Then, type in "npm run start" to run it with the devServer.
-
-Alternatively (recommended for regular use) go to dist -> index.html (note: Do not use the one in the src folder).
+Go to dist -> index.html (note: Do not use the one in the src folder).
 
 Recommended browser: Google Chrome
 
