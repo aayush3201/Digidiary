@@ -64,7 +64,16 @@ export const displayList = (list)=>{
 
 
 const dueInGenerator = (el)=>{
-    return parseFloat(`${el.dueIn.years}${el.dueIn.months}${el.dueIn.days<10?'0'+el.dueIn.days:el.dueIn.days}.${el.dueIn.hours}${el.dueIn.minutes}`);
+    var timeValue = el.dueIn.years;
+    timeValue*=100;
+    timeValue+=el.dueIn.months;
+    timeValue*=100;
+    timeValue+=el.dueIn.days;
+    timeValue*=100;
+    timeValue+=el.dueIn.hours;
+    timeValue*=100;
+    timeValue+=el.dueIn.minutes;
+    return timeValue;
 }
 
 const getTime = (el)=>{
@@ -82,7 +91,7 @@ const getTime = (el)=>{
 const bubbleSort = (arr)=>{
     let n = arr.length; 
         for (let i = 0; i < n-1; i++) 
-            for (let j = 0; j < n-i-1; j++) 
+            for (let j = 0; j < n-i-1; j++){
                 if (dueInGenerator(arr[j]) > dueInGenerator(arr[j+1])) 
                 { 
                     // swap arr[j+1] and arr[i] 
@@ -90,5 +99,6 @@ const bubbleSort = (arr)=>{
                     arr[j] = arr[j+1]; 
                     arr[j+1] = temp; 
                 }
+            }
                 return arr;
 }
